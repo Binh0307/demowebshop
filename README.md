@@ -1,6 +1,6 @@
 # Demo Web Shop Test Automation
 
-This repository contains end-to-end test cases for the Demo Web Shop, using Python, Selenium, and Pytest. It covers user registration, login scenarios, search, ordering, and adding items to the cart.
+This repository contains end-to-end test cases for the https://demowebshop.tricentis.com/, using Python, Selenium, and Pytest. It covers user registration, login scenarios, search, ordering, and adding items to the cart.
 
 ## Table of Contents
 
