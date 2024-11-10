@@ -1,0 +1,26 @@
+https://github.com/YantraQA/demowebshop.tricentis.assignment
+https://github.com/emreztrk/Selenium_Project02_DemoWebSite2
+User Registration Scenarios:
+- Valid user registration with all required fields filled correctly.
+- Attempt to register with missing fields (e.g., without entering an email or password).
+- Try registration with an already-registered email to test for duplicate email handling.
+- Register using invalid data formats (e.g., incorrect email format, weak password).
+- Verify success or error messages for each scenario.
+
+User Login Scenarios:
+- Successful login with valid credentials.
+- Unsuccessful login attempts with incorrect credentials (e.g., wrong email, wrong password).
+- Login with a non-registered email.
+- Test for account lockouts or rate limiting after multiple failed login attempts (if applicable).
+- Verify logout functionality to ensure the user is logged out properly.
+
+ Design Test Cases for Each Scenario
+- Test Case ID: A unique identifier for the test case.
+- Test Title: Short, descriptive name (e.g., “Register with Valid Details”).
+- Preconditions: Any setup required (e.g., ensure the test email isn’t already registered).
+- Test Steps:
+- Open the registration or login page.
+- Enter test data into form fields (e.g., email, password).
+- Submit the form.
+- Expected Result: Describe the expected outcome (e.g., user sees a “Registration Successful” message, or “Invalid Login” error).
+- Postconditions: Any required cleanup (e.g., deleting the test user from the database if needed).

@@ -1,0 +1,19 @@
+{
+    "checkout1": {
+        "country": "Viet Nam",
+        "city": "HCMC",
+        "address1": "quan8",
+        "postal_code": "111111",
+        "phone_number" :"1234567"
+
+    },
+
+    "checkout2": {
+        "country": "Viet Nam",
+        "city": "HaNoi",
+        "address1": "HoanKiem",
+        "postal_code": "999999",
+        "phone_number" :"9876543210"
+
+    }
+}

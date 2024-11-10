@@ -1,0 +1,32 @@
+{
+    "user1": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "testuser1@example.com",
+        "password": "password123",
+        "gender": "M"
+    },
+    "user2": {
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "uhjanesmith123456@example.com",
+        "password": "password123",
+        "gender": "F"
+    },
+
+    "login_user": {
+        "first_name": "",
+        "last_name": "",
+        "email": "bay@gmail.com",
+        "password": "1234567",
+        "gender": ""
+    },
+
+    "not_registed_user": {
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "NotRegistered@registed.com",
+        "password": "password123",
+        "gender": "F"
+    }
+}
