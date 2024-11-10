@@ -1,26 +1,78 @@
-https://github.com/YantraQA/demowebshop.tricentis.assignment
-https://github.com/emreztrk/Selenium_Project02_DemoWebSite2
-User Registration Scenarios:
-- Valid user registration with all required fields filled correctly.
-- Attempt to register with missing fields (e.g., without entering an email or password).
-- Try registration with an already-registered email to test for duplicate email handling.
-- Register using invalid data formats (e.g., incorrect email format, weak password).
-- Verify success or error messages for each scenario.
+Scenario 1: User Registration (Valid)
+Description: Verify that a new user can successfully register with valid information.
 
-User Login Scenarios:
-- Successful login with valid credentials.
-- Unsuccessful login attempts with incorrect credentials (e.g., wrong email, wrong password).
-- Login with a non-registered email.
-- Test for account lockouts or rate limiting after multiple failed login attempts (if applicable).
-- Verify logout functionality to ensure the user is logged out properly.
+Steps:
+1. Navigate to the registration page.
+2. Fill in the required fields (First Name, Last Name, Email, Password, Gender).
+3. Submit the registration form.
+4. Verify that the registration is successful 
+Expected Result: User is successfully registered 
 
- Design Test Cases for Each Scenario
-- Test Case ID: A unique identifier for the test case.
-- Test Title: Short, descriptive name (e.g., “Register with Valid Details”).
-- Preconditions: Any setup required (e.g., ensure the test email isn’t already registered).
-- Test Steps:
-- Open the registration or login page.
-- Enter test data into form fields (e.g., email, password).
-- Submit the form.
-- Expected Result: Describe the expected outcome (e.g., user sees a “Registration Successful” message, or “Invalid Login” error).
-- Postconditions: Any required cleanup (e.g., deleting the test user from the database if needed).
+Scenario 2: Login Scenarios
+Scenario 2.1: Invalid Login
+Description: Verify that logging in with invalid credentials displays an error.
+
+Steps:
+1. Navigate to the login page.
+2. Enter an invalid email and/or password.
+3. Submit the login form.
+4. Verify that an error message is displayed, stating that the login was unsuccessful.
+Expected Result: The system displays a clear error message indicating invalid login credentials.
+
+Scenario 2.2: Valid Login
+Description: Verify that a user can successfully log in with valid credentials.
+
+Steps:
+1. Navigate to the login page.
+2. Enter a registered email and valid password.
+3. Submit the login form.
+4. Verify that the user is logged in successfully (e.g., check for a welcome message or account dashboard).
+Expected Result: User is successfully logged in and directed to their account page with a personalized greeting.
+
+Scenario 3: Search Functionality
+Description: Verify that a user can search for products.
+
+Steps:
+1. Navigate to the homepage.
+2. Enter a keyword (e.g., "computer") in the search bar.
+3. Click the search button.
+4. Verify that relevant search results are displayed.
+Expected Result: The search results page displays items related to the entered keyword.
+
+Scenario 4: Add to Cart
+Scenario 4.1: Add to Cart as Anonymous User
+Description: Verify that an anonymous user can add items to the cart.
+
+Steps:
+1. Perform a product search.
+2. Click on a product from the search results.
+3. Select quantity (optional) and click the "Add to Cart" button.
+4. Verify that the cart reflects the correct product and quantity and price.
+Expected Result: The item is added to the cart, and the cart count updates accordingly, and the price is correct.
+
+Scenario 4.2: Add to Cart as Logged-In User
+Description: Verify that a logged-in user can add items to the cart.
+Precondition: User is logged in (use test_add_to_cart_logged_in_user if part of a test suite).
+
+Steps:
+1. Perform a product search.
+2. Click on a product from the search results.
+3. Select quantity (optional) and click the "Add to Cart" button.
+4. Verify that the cart reflects the correct product and quantity and price.
+Expected Result: The item is added to the cart, and the cart count updates accordingly, and the price is correct.
+
+Scenario 5: Place an Order
+Description: Verify that a logged-in user can place an order successfully.
+Precondition: User has items in the cart and is logged in.
+
+Steps:
+1. Go to the cart page and verify the items and quantities.
+2. Agree to the terms and proceed to checkout.
+3. Enter shipping and billing information .
+4. Select a shipping method and payment option.
+5. Confirm the order.
+
+Expected Result: The order is completed successfully.
+
+
+
